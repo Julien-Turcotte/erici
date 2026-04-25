@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stylized wooden table
+* source:	https://sketchfab.com/3d-models/stylized-wooden-table-548fc7c6d0dd4b2f90de83494b52ea40
+* author:	Ritsumei (https://sketchfab.com/ritsumei)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stylized wooden table" (https://sketchfab.com/3d-models/stylized-wooden-table-548fc7c6d0dd4b2f90de83494b52ea40) by Ritsumei (https://sketchfab.com/ritsumei) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

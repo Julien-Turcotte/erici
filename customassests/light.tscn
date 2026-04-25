@@ -1,9 +1,3 @@
-[gd_scene format=3 uid="uid://c2jydaj5t36v3"]
-
-[ext_resource type="Script" uid="uid://buctv23l3pssj" path="res://spot_light_3d.gd" id="1_omyxt"]
-
-[node name="light" type="SpotLight3D" unique_id=393375664]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
-light_color = Color(0.6666558, 0.49293447, 0.1601848, 1)
-spot_angle = 48.44
-script = ExtResource("1_omyxt")
+version https://git-lfs.github.com/spec/v1
+oid sha256:0bcf80065b293d639512bda26afde24debd8ad88cf274f3e5eb66f698fabcb2c
+size 374

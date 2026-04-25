@@ -2,12 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c30o87vyn3121"
-valid=false
+uid="uid://s2yyc7kkwv05"
+path.s3tc="res://.godot/imported/wood-top_baseColor.png-baea134a444b93f8d19731ac6a71de1d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
-source_file="res://textures/sky_23_2k.png"
+source_file="res://customassests/stylized_wooden_table/textures/wood-top_baseColor.png"
+dest_files=["res://.godot/imported/wood-top_baseColor.png-baea134a444b93f8d19731ac6a71de1d.s3tc.ctex"]
 
 [params]
 

@@ -13,7 +13,6 @@ config_version=5
 config/name="Ujam"
 run/main_scene="uid://djri2cswey3x6"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
