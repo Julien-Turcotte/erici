@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://nocsifgimlk1"]
+
+[resource]
+transparency = 1
+albedo_color = Color(0.023529412, 0.7647059, 0.94509804, 0.9372549)
+roughness = 0.0
+emission_enabled = true
+emission = Color(0, 0.6463834, 0.66297555, 1)
+emission_energy_multiplier = 10.85

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://r318as0540gu"]
+
+[ext_resource type="Texture2D" uid="uid://btrmqo4n7do5u" path="res://textures/earth-texture/696.jpg" id="1_hcy65"]
+
+[resource]
+albedo_color = Color(0.6521099, 0.9999997, 0.9984066, 1)
+albedo_texture = ExtResource("1_hcy65")
+emission_enabled = true
+emission = Color(0.29554638, 0.5080899, 1, 1)
+emission_energy_multiplier = 2.9
+emission_on_uv2 = true
+emission_texture = ExtResource("1_hcy65")
