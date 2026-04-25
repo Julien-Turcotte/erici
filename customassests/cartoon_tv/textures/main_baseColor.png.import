@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btrmqo4n7do5u"
-path.s3tc="res://.godot/imported/696.jpg-efc9db62131cc806dbc533e25683b3a1.s3tc.ctex"
+uid="uid://bphktqq7lcfrt"
+path.s3tc="res://.godot/imported/main_baseColor.png-79f5df8702f8193f28b92440f7c15f58.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/earth-texture/696.jpg"
-dest_files=["res://.godot/imported/696.jpg-efc9db62131cc806dbc533e25683b3a1.s3tc.ctex"]
+source_file="res://customassests/cartoon_tv/textures/main_baseColor.png"
+dest_files=["res://.godot/imported/main_baseColor.png-79f5df8702f8193f28b92440f7c15f58.s3tc.ctex"]
 
 [params]
 

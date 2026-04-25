@@ -1,0 +1,322 @@
+[gd_scene format=3 uid="uid://bafrglya3l1wd"]
+
+[ext_resource type="PackedScene" uid="uid://jkjg1f3knsjr" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Pebble_Square_6.gltf" id="1_0ytqx"]
+[ext_resource type="Texture2D" uid="uid://dpd0jrvt3aoor" path="res://textures/grass/Grass008_2K-JPG/Grass008_2K-JPG_Color.jpg" id="1_ee4bf"]
+[ext_resource type="Texture2D" uid="uid://bj5jw3nib25ce" path="res://textures/grass/Grass008_2K-JPG/Grass008_2K-JPG_NormalDX.jpg" id="2_kbped"]
+[ext_resource type="PackedScene" uid="uid://uvquefxvej6c" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Short.gltf" id="2_w5605"]
+[ext_resource type="PackedScene" uid="uid://c7fqcqcrnq843" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Bush_Common_Flowers.gltf" id="3_87wg0"]
+[ext_resource type="Texture2D" uid="uid://qqbqgh8x5o7" path="res://textures/rock/Rock060_2K-JPG/Rock060_2K-JPG_Color.jpg" id="3_fj5cn"]
+[ext_resource type="PackedScene" uid="uid://it3frv35tofp" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Flower_3_Single.gltf" id="4_3ag6a"]
+[ext_resource type="Texture2D" uid="uid://6alpayi12lpr" path="res://textures/rock/Rock060_2K-JPG/Rock060_2K-JPG_NormalDX.jpg" id="4_iy58a"]
+[ext_resource type="Texture2D" uid="uid://2fiju4duxbcg" path="res://textures/dirt/Ground103_2K-JPG/Ground103_2K-JPG_Color.jpg" id="6_pxugv"]
+[ext_resource type="Texture2D" uid="uid://cm8u5j58drv2g" path="res://textures/dirt/Ground103_2K-JPG/Ground103_2K-JPG_NormalDX.jpg" id="7_eh0v1"]
+[ext_resource type="PackedScene" uid="uid://bt77b1x6rc1iw" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/CommonTree_3.gltf" id="8_am1vj"]
+[ext_resource type="PackedScene" uid="uid://bhsmt8oxmbnd" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/CommonTree_5.gltf" id="10_knq72"]
+[ext_resource type="PackedScene" uid="uid://c1l32dain16yy" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Pine_2.gltf" id="11_oq4si"]
+[ext_resource type="PackedScene" uid="uid://pt477f2tynnc" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Pine_4.gltf" id="12_m4egf"]
+[ext_resource type="PackedScene" uid="uid://c7m1hpcryg0uu" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Plant_7_Big.gltf" id="13_pi4e7"]
+[ext_resource type="PackedScene" uid="uid://xsbbwcwksfux" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Petal_5.gltf" id="14_kuuv8"]
+[ext_resource type="PackedScene" uid="uid://c5os2kp4ia0o1" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Common.gltf" id="15_ou021"]
+[ext_resource type="PackedScene" uid="uid://b508bt270x5dm" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_2.gltf" id="16_3fl80"]
+[ext_resource type="PackedScene" uid="uid://dc78xxj036dm6" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/TwistedTree_2.gltf" id="17_8jbwv"]
+[ext_resource type="PackedScene" uid="uid://cu68m1o7c04lb" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Petal_3.gltf" id="20_b3rfh"]
+[ext_resource type="PackedScene" uid="uid://beyf0jcjrg1ed" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Petal_2.gltf" id="21_5axgr"]
+[ext_resource type="PackedScene" uid="uid://c1fxtrkd5jx8i" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Petal_1.gltf" id="22_wfgqd"]
+[ext_resource type="PackedScene" uid="uid://b7r1kmbmkvc80" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Plant_7.gltf" id="23_jkes7"]
+[ext_resource type="PackedScene" uid="uid://bg8eyfo5ygswa" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/CommonTree_1.gltf" id="24_gqja0"]
+[ext_resource type="PackedScene" uid="uid://2ua43kw60okl" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Clover_1.gltf" id="25_n8v1s"]
+[ext_resource type="PackedScene" uid="uid://ed8m6f5ddh2s" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Bush_Common.gltf" id="26_7bdvj"]
+[ext_resource type="PackedScene" uid="uid://cmxbhfe7ccr53" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Flower_4_Single.gltf" id="27_q6xdd"]
+[ext_resource type="PackedScene" uid="uid://c6mksxqe1nc5g" path="res://textures/stylizednature/Stylized Nature MegaKit[Standard]/glTF/Fern_1.gltf" id="28_lqmkq"]
+[ext_resource type="PackedScene" uid="uid://g82c2jhf20i0" path="res://customassests/stylized_wooden_table/scene.gltf" id="29_3ag6a"]
+[ext_resource type="PackedScene" uid="uid://bi5ja51gugp03" path="res://customassests/table-and-bench/source/For SF.blend" id="29_87wg0"]
+[ext_resource type="PackedScene" uid="uid://drnna6a08isr1" path="res://customassests/cartoon_tv/scene.gltf" id="31_b3rfh"]
+[ext_resource type="Script" uid="uid://ddsdysc0i17ed" path="res://customassests/cartoon_tv/variation.gd" id="32_5axgr"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uchyk"]
+sky_top_color = Color(0.5526177, 0.42909932, 0.12572324, 1)
+sky_horizon_color = Color(0.35077992, 0.72580737, 0.8537763, 1)
+sky_curve = 0.16643554
+sky_energy_multiplier = 1.2
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_0fbet"]
+sky_material = SubResource("ProceduralSkyMaterial_uchyk")
+
+[sub_resource type="Environment" id="Environment_62e2m"]
+background_mode = 2
+background_energy_multiplier = 0.69
+sky = SubResource("Sky_0fbet")
+ambient_light_source = 3
+ambient_light_color = Color(0.37879023, 0.2177015, 0.33325374, 1)
+tonemap_mode = 2
+ssao_enabled = true
+glow_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.6025263, 0.83649534, 0.86385274, 1)
+fog_density = 0.315
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0205
+adjustment_enabled = true
+adjustment_contrast = 1.175
+adjustment_saturation = 0.84
+
+[sub_resource type="Gradient" id="Gradient_ee4bf"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_kbped"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_fj5cn"]
+noise = SubResource("FastNoiseLite_kbped")
+color_ramp = SubResource("Gradient_ee4bf")
+seamless = true
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_iy58a"]
+_shader_parameters = {
+&"bias_distance": 512.0,
+&"blend_sharpness": 0.5,
+&"depth_blur": 0.0,
+&"enable_macro_variation": true,
+&"enable_projection": true,
+&"flat_terrain_normals": false,
+&"macro_variation1": Color(1, 1, 1, 1),
+&"macro_variation2": Color(1, 1, 1, 1),
+&"macro_variation_slope": 0.333,
+&"mipmap_bias": 1.0,
+&"noise1_angle": 0.0,
+&"noise1_offset": Vector2(0.5, 0.5),
+&"noise1_scale": 0.04,
+&"noise2_scale": 0.076,
+&"noise_texture": SubResource("NoiseTexture2D_fj5cn"),
+&"projection_threshold": 0.8
+}
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_0ytqx"]
+name = "Pebble_Square_6"
+scene_file = ExtResource("1_0ytqx")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_il8ev"]
+name = "Grass_Common_Short"
+id = 1
+scene_file = ExtResource("2_w5605")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_l62jy"]
+name = "Bush_Common_Flowers"
+id = 2
+scene_file = ExtResource("3_87wg0")
+density = 1.6800613
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_8v3ii"]
+name = "Flower_3_Single"
+id = 3
+scene_file = ExtResource("4_3ag6a")
+density = 6.0774775
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_0ytqx"]
+name = "Grass008_2K-JPG_Color"
+albedo_color = Color(0.4986602, 0.7559034, 0.33236188, 1)
+albedo_texture = ExtResource("1_ee4bf")
+normal_texture = ExtResource("2_kbped")
+uv_scale = 0.24
+detiling_rotation = 0.193
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_pxugv"]
+name = "Rock060_2K-JPG_Color"
+id = 1
+albedo_texture = ExtResource("3_fj5cn")
+normal_texture = ExtResource("4_iy58a")
+uv_scale = 0.521
+detiling_rotation = 0.215
+detiling_shift = 0.105
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_6a6wx"]
+name = "Capture d’écran 2026-04-25 111233white"
+id = 2
+albedo_color = Color(0.58565146, 0.73001254, 0.64091563, 1)
+albedo_texture = ExtResource("6_pxugv")
+normal_texture = ExtResource("7_eh0v1")
+
+[sub_resource type="Terrain3DAssets" id="Terrain3DAssets_eh0v1"]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_0ytqx"), SubResource("Terrain3DMeshAsset_il8ev"), SubResource("Terrain3DMeshAsset_l62jy"), SubResource("Terrain3DMeshAsset_8v3ii")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_0ytqx"), SubResource("Terrain3DTextureAsset_pxugv"), SubResource("Terrain3DTextureAsset_6a6wx")])
+
+[sub_resource type="Animation" id="Animation_5axgr"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.3078902, 1.1599143, 1.087194)
+
+[sub_resource type="Animation" id="Animation_wfgqd"]
+resource_name = "new_animation"
+length = 2.0
+step = 5.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = PackedFloat32Array(0, 1, -0.3078902, 1.11612, 1.087194, 1, 1, -0.308, 1.14, 1.087, 2, 1, -0.3078902, 1.11612, 1.087194)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jkes7"]
+_data = {
+&"RESET": SubResource("Animation_5axgr"),
+&"new_animation": SubResource("Animation_wfgqd")
+}
+
+[node name="menu" type="Control" unique_id=1618412123]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1070494380]
+environment = SubResource("Environment_62e2m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=969839022]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_color = Color(0.9941762, 1, 0.6120189, 1)
+light_energy = 1.208
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=836252320]
+transform = Transform3D(1, 0, 0, 0, 0.99840254, 0.05650111, 0, -0.05650111, 0.99840254, 1.046948, 1.3408909, 2.9712517)
+
+[node name="Terrain3D" type="Terrain3D" parent="." unique_id=1900924273]
+data_directory = "res://data"
+material = SubResource("Terrain3DMaterial_iy58a")
+assets = SubResource("Terrain3DAssets_eh0v1")
+top_level = true
+metadata/_edit_lock_ = true
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1883663774]
+
+[node name="CommonTree_32" parent="CSGCombiner3D" unique_id=1226717628 instance=ExtResource("8_am1vj")]
+transform = Transform3D(2.216528, 0, 0, 0, 0.9041883, 0, 0, 0, 2.216528, -0.8242414, 0, -16.935623)
+
+[node name="CommonTree_52" parent="CSGCombiner3D" unique_id=1709367302 instance=ExtResource("10_knq72")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3936875, -0.9034729, -6.2609663)
+
+[node name="Pebble_Square_62" parent="CSGCombiner3D" unique_id=422288627 instance=ExtResource("1_0ytqx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3885868, 0, -4.487756)
+
+[node name="Pine_22" parent="CSGCombiner3D" unique_id=907145027 instance=ExtResource("11_oq4si")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.746936, 0, -8.717743)
+
+[node name="Pine_42" parent="CSGCombiner3D" unique_id=1922584578 instance=ExtResource("12_m4egf")]
+transform = Transform3D(0.9997969, -0.020157184, 0, 0.020157184, 0.9997969, 0, 0, 0, 1, -3.0351024, 0, -11.517418)
+
+[node name="Pine_42" parent="CSGCombiner3D/Pine_42" unique_id=1569560545 instance=ExtResource("12_m4egf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.163459, -2.240768, -18.146072)
+
+[node name="Plant_7_Big2" parent="CSGCombiner3D/Pine_42" unique_id=1471593211 instance=ExtResource("13_pi4e7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.290427, 0, -0.05578327)
+
+[node name="Petal_52" parent="CSGCombiner3D/Pine_42" unique_id=862578368 instance=ExtResource("14_kuuv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.11139, 0, -0.4599781)
+
+[node name="Mushroom_Common2" parent="CSGCombiner3D/Pine_42" unique_id=1362762899 instance=ExtResource("15_ou021")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.02278, 0, 1.3989887)
+
+[node name="Rock_Medium_22" parent="CSGCombiner3D" unique_id=997344973 instance=ExtResource("16_3fl80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.906062, -0.58697224, -15.12316)
+
+[node name="Rock_Medium_23" parent="CSGCombiner3D" unique_id=191182300 instance=ExtResource("16_3fl80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9878416, -1.2053976, -21.09098)
+
+[node name="TwistedTree_22" parent="CSGCombiner3D" unique_id=1521563013 instance=ExtResource("17_8jbwv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7664585, 0, -17.82722)
+
+[node name="Petal_32" parent="CSGCombiner3D" unique_id=641317116 instance=ExtResource("20_b3rfh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8766513, 0, 0.6209898)
+
+[node name="Petal_22" parent="CSGCombiner3D" unique_id=564862278 instance=ExtResource("21_5axgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5992646, 9.536743e-07, 0.113720894)
+
+[node name="Petal_12" parent="CSGCombiner3D" unique_id=262389726 instance=ExtResource("22_wfgqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1962667, 9.536743e-07, -1.5236654)
+
+[node name="Petal_52" parent="CSGCombiner3D" unique_id=1255531114 instance=ExtResource("14_kuuv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8999414, 0, 2.0879507)
+
+[node name="Plant_72" parent="CSGCombiner3D" unique_id=48008582 instance=ExtResource("23_jkes7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8439457, 0, -4.7459717)
+
+[node name="Plant_7_Big2" parent="CSGCombiner3D" unique_id=2131476633 instance=ExtResource("13_pi4e7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5136328, 0, -7.832901)
+
+[node name="CommonTree_12" parent="CSGCombiner3D" unique_id=1541639816 instance=ExtResource("24_gqja0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.945298, -1.0829496, -1.8886957)
+
+[node name="Clover_12" parent="CSGCombiner3D" unique_id=1075642890 instance=ExtResource("25_n8v1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.350648, -9.536743e-07, -1.0473042)
+
+[node name="Bush_Common2" parent="CSGCombiner3D" unique_id=1875128577 instance=ExtResource("26_7bdvj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4536052, 0, -14.91968)
+
+[node name="Bush_Common_Flowers2" parent="CSGCombiner3D" unique_id=1589198421 instance=ExtResource("3_87wg0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.979948, 0, -12.686821)
+
+[node name="Flower_4_Single2" parent="CSGCombiner3D" unique_id=1336846490 instance=ExtResource("27_q6xdd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4989665, -1.1339886, -10.03679)
+
+[node name="Grass_Common_Short2" parent="CSGCombiner3D" unique_id=2123094234 instance=ExtResource("2_w5605")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.104485, -0.5895977, -11.314505)
+
+[node name="Fern_12" parent="CSGCombiner3D" unique_id=402938805 instance=ExtResource("28_lqmkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5176101, 0, -19.28419)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1892120557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, 0)
+
+[node name="Sketchfab_Scene" parent="CSGCombiner3D" unique_id=1438097216 instance=ExtResource("29_3ag6a")]
+transform = Transform3D(0.91967076, 0, 0.39269024, 0, 1, 0, -0.39269024, 0, 0.91967076, -0.35442266, 0.5198407, 0.6323979)
+
+[node name="For SF" parent="CSGCombiner3D" unique_id=1653404748 instance=ExtResource("29_87wg0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.137858, 0, -25.669113)
+
+[node name="Sketchfab_Scene2" parent="CSGCombiner3D" unique_id=1426506976 instance=ExtResource("31_b3rfh")]
+transform = Transform3D(0.91750485, 0, 0.39772445, 0, 1, 0, -0.39772445, 0, 0.91750485, -0.36657947, 0.6373334, 0.8636019)
+script = ExtResource("32_5axgr")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=286784939]
+transform = Transform3D(1.0511785, 0, 0.13405919, 0, 0.10492268, 0, -0.47825184, 0, 0.29465657, -0.3078902, 1.1599143, 1.087194)
+size = Vector3(0.44410706, 1.7753906, 0.27197266)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CSGBox3D" unique_id=322791148]
+libraries/ = SubResource("AnimationLibrary_jkes7")
+playback_default_blend_time = 105.93
+speed_scale = 0.808
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=258045670]
+transform = Transform3D(0.94049627, 0, 0.11994363, 0, 0.09387501, 0, -0.42789507, 0, 0.26363117, -0.31032082, 0.9003824, 1.1010764)
+size = Vector3(0.38913345, 1.7753906, 0.27197266)
