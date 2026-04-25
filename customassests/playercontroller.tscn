@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cjlx46yg4pwhw"]
 
 [ext_resource type="Script" uid="uid://dii05l60gj8n8" path="res://addons/brackeys-proto-controller-main/brackeys-proto-controller-main/proto_controller/proto_controller.gd" id="1_ybkcx"]
-[ext_resource type="Script" uid="uid://cy3jfg5r4kgyx" path="res://addons/brackeys-proto-controller-main/brackeys-proto-controller-main/proto_controller/Footsteps.gd" id="2_qijhw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -14,7 +13,7 @@ height = 1.8
 radius = 0.4
 height = 1.8
 
-[node name="ProtoController2" type="CharacterBody3D" unique_id=807739029]
+[node name="Controller" type="CharacterBody3D" unique_id=807739029]
 script = ExtResource("1_ybkcx")
 base_speed = 5.0
 
@@ -28,18 +27,9 @@ mesh = SubResource("CapsuleMesh_ucva2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
-[node name="FootRay" type="RayCast3D" parent="Collider" unique_id=428267465]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.9604645e-08, 0)
-target_position = Vector3(0, -1.6, 0)
-
 [node name="Head" type="Node3D" parent="." unique_id=1430360648]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=108401917]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.20000005, 0)
 fov = 65.0
-
-[node name="Footsteps" type="Node" parent="." unique_id=926165627]
-script = ExtResource("2_qijhw")
-
-[node name="FootAudio" type="AudioStreamPlayer3D" parent="." unique_id=1791322258]

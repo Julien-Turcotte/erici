@@ -28,6 +28,6 @@ environment = SubResource("Environment_c2veo")
 transform = Transform3D(40.841545, 0, 0, 0, 0.105439425, 0, 0, 0, 40.841545, 0, -0.03902632, 0)
 use_collision = true
 
-[node name="ProtoController2" parent="." unique_id=807739029 instance=ExtResource("1_lx55e")]
+[node name="controller" parent="." unique_id=807739029 instance=ExtResource("1_lx55e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4614823, 2.6381, 0.5732689)
 can_sprint = true
