@@ -7,3 +7,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1937442960]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=836252320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7198796, 2.720567)
