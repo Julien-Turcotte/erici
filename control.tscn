@@ -1,5 +1,11 @@
 [gd_scene format=3 uid="uid://bafrglya3l1wd"]
 
+[ext_resource type="Texture2D" uid="uid://dpd0jrvt3aoor" path="res://textures/grass/Grass008_2K-JPG/Grass008_2K-JPG_Color.jpg" id="1_ee4bf"]
+[ext_resource type="Shader" uid="uid://dq3lfyp3u5oxt" path="res://addons/terrain_3d/extras/particle_example/grass.gdshader" id="1_kbped"]
+[ext_resource type="Texture2D" uid="uid://bj5jw3nib25ce" path="res://textures/grass/Grass008_2K-JPG/Grass008_2K-JPG_NormalDX.jpg" id="2_kbped"]
+[ext_resource type="Texture2D" uid="uid://qqbqgh8x5o7" path="res://textures/rock/Rock060_2K-JPG/Rock060_2K-JPG_Color.jpg" id="3_fj5cn"]
+[ext_resource type="Texture2D" uid="uid://6alpayi12lpr" path="res://textures/rock/Rock060_2K-JPG/Rock060_2K-JPG_NormalDX.jpg" id="4_iy58a"]
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uchyk"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -53,7 +59,11 @@ _shader_parameters = {
 &"noise_texture": SubResource("NoiseTexture2D_kbped"),
 &"projection_threshold": 0.8
 }
-show_checkered = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fj5cn"]
+render_priority = 0
+shader = ExtResource("1_kbped")
+shader_parameter/wind_direction = Vector2(1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iy58a"]
 transparency = 4
@@ -65,16 +75,54 @@ distance_fade_mode = 1
 distance_fade_min_distance = 128.0
 distance_fade_max_distance = 96.0
 
-[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_6a6wx"]
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_0fbet"]
 generated_type = 1
 height_offset = 0.5
 material_override = SubResource("StandardMaterial3D_iy58a")
+material_overlay = SubResource("ShaderMaterial_fj5cn")
 last_lod = 0
 last_shadow_lod = 0
 lod0_range = 128.0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6a6wx"]
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+distance_fade_mode = 1
+distance_fade_min_distance = 128.0
+distance_fade_max_distance = 96.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_sky72"]
+id = 1
+generated_type = 1
+height_offset = 0.5
+material_override = SubResource("StandardMaterial3D_6a6wx")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_ee4bf"]
+name = "Grass008_2K-JPG_Color"
+albedo_texture = ExtResource("1_ee4bf")
+normal_texture = ExtResource("2_kbped")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_6a6wx"]
+name = "Rock060_2K-JPG_Color"
+id = 1
+albedo_texture = ExtResource("3_fj5cn")
+normal_texture = ExtResource("4_iy58a")
+normal_depth = 0.316
+ao_strength = 0.991
+roughness = 0.632
+uv_scale = 0.112
+detiling_rotation = 0.018
+detiling_shift = 0.18
+
 [sub_resource type="Terrain3DAssets" id="Terrain3DAssets_sky72"]
-mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_6a6wx")])
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_0fbet"), SubResource("Terrain3DMeshAsset_sky72")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_ee4bf"), SubResource("Terrain3DTextureAsset_6a6wx")])
 
 [node name="Control" type="Control" unique_id=1618412123]
 layout_mode = 3
@@ -94,11 +142,10 @@ shadow_enabled = true
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1937442960]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=836252320]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7198796, 2.720567)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4792285, 2.9712517)
 
 [node name="Terrain3D" type="Terrain3D" parent="." unique_id=431257606]
 data_directory = "res://data"
 material = SubResource("Terrain3DMaterial_fj5cn")
 assets = SubResource("Terrain3DAssets_sky72")
-show_checkered = true
 top_level = true
