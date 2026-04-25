@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
+
+[ext_resource type="Script" uid="uid://dii05l60gj8n8" path="res://addons/brackeys-proto-controller-main/brackeys-proto-controller-main/proto_controller/proto_controller.gd" id="1_fy4em"]
+[ext_resource type="Script" uid="uid://cy3jfg5r4kgyx" path="res://addons/brackeys-proto-controller-main/brackeys-proto-controller-main/proto_controller/Footsteps.gd" id="2_0fu28"]
+[ext_resource type="AudioStream" uid="uid://f00t1a2b3c4d" path="res://sounds/footsteps/409-heavy-running-metal-footsteps-2.mp3" id="3_foot1"]
+[ext_resource type="AudioStream" uid="uid://f00t5a6b7c8d" path="res://sounds/footsteps/514-metal-footsteps-4.mp3" id="4_foot2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
+albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ucva2"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iof21"]
+radius = 0.4
+height = 1.8
+
+[node name="ProtoController" type="CharacterBody3D" unique_id=629932313]
+script = ExtResource("1_fy4em")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1704918675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_iof21")
+cast_shadow = 0
+mesh = SubResource("CapsuleMesh_ucva2")
+
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=1800043382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_iof21")
+
+[node name="FootRay" type="RayCast3D" parent="Collider" unique_id=1935566482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.9604645e-08, 0)
+target_position = Vector3(0, -1.6, 0)
+
+[node name="Head" type="Node3D" parent="." unique_id=1598744790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=1494409870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.20000005, 0)
+fov = 65.0
+
+[node name="Footsteps" type="Node" parent="." unique_id=1909023806]
+script = ExtResource("2_0fu28")
+foot_ray_path = NodePath("Collider/FootRay")
+audio_player_path = NodePath("FootAudio")
+metal_sounds = [ ExtResource("3_foot1"), ExtResource("4_foot2") ]
+default_sounds = [ ExtResource("3_foot1") ]
+
+[node name="FootAudio" type="AudioStreamPlayer3D" parent="." unique_id=740818224]
