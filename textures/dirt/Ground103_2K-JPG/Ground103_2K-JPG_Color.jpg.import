@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhfupyybc51d7"
-path="res://.godot/imported/Capture d’écran 2026-04-25 111233white.png-294610ddc8080890a876868f074900b0.ctex"
+uid="uid://2fiju4duxbcg"
+path.s3tc="res://.godot/imported/Ground103_2K-JPG_Color.jpg-fd92f03226185b0161dcd220ebd7e959.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://textures/Capture d’écran 2026-04-25 111233white.png"
-dest_files=["res://.godot/imported/Capture d’écran 2026-04-25 111233white.png-294610ddc8080890a876868f074900b0.ctex"]
+source_file="res://textures/dirt/Ground103_2K-JPG/Ground103_2K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/Ground103_2K-JPG_Color.jpg-fd92f03226185b0161dcd220ebd7e959.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -24,7 +25,7 @@ compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
-mipmaps/limit=11
+mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
 process/channel_remap/red=0
@@ -37,4 +38,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=2
+detect_3d/compress_to=0
