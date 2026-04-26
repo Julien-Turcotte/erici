@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dc4iw0vmuq5he"
-path="res://.godot/imported/tablet.blend-bd276b6c1e3208bdd5124a8cadbc2262.scn"
+valid=false
 
 [deps]
 
 source_file="res://customassests/source/tablet.blend"
-dest_files=["res://.godot/imported/tablet.blend-bd276b6c1e3208bdd5124a8cadbc2262.scn"]
 
 [params]
 

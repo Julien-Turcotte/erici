@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dabek1o0d30xr"
-path="res://.godot/imported/Grass008_2K-JPG.blend-e141801e6e157a5506bf56bccac1d707.scn"
+valid=false
 
 [deps]
 
 source_file="res://textures/grass/Grass008_2K-JPG/Grass008_2K-JPG.blend"
-dest_files=["res://.godot/imported/Grass008_2K-JPG.blend-e141801e6e157a5506bf56bccac1d707.scn"]
 
 [params]
 

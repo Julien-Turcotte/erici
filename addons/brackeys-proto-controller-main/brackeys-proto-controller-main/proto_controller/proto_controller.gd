@@ -63,6 +63,7 @@ var alive : bool = true
 @onready var collider: CollisionShape3D = $Collider
 
 func _ready() -> void:
+	Input.MOUSE_MODE_CAPTURED
 	var ititial_position = self.global_position
 	check_input_mappings()
 	look_rotation.y = rotation.y
@@ -139,6 +140,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		get_tree().paused = true
 		$dead.visible = true
+		Input.MOUSE_MODE_VISIBLE
 
 
 ## Rotate us to look around.
@@ -201,10 +203,7 @@ func check_input_mappings():
 func take_dammage():
 	if is_in_sun:
 		if energy > 0:
-			if $sizzle.playing :
-				pass
-			else:
-				$sizzle.play()
+			#
 			energy -= 1
 		else:
 			alive = false

@@ -4,7 +4,7 @@ extends Node3D
 # Called when the node enters the scene tree for the first time.
 
 func _ready() -> void:
-	pass
+	self.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -12,3 +12,7 @@ func _process(delta: float) -> void:
 
 func _on_scene_3_animation_finished(anim_name: StringName) -> void:
 	particles.play()
+
+
+func _on_scene_animation_finished(anim_name: StringName) -> void:
+	self.visible = true
