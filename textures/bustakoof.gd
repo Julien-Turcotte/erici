@@ -1,4 +1,4 @@
-extends Area3D
+extends AnimationPlayer
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,8 +11,7 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
-	print("test")
+func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	print(event)
-	if event is InputEventMouseButton and event.pressed:
-		print("real click")
+	if event is InputEventMouseMotion:
+		play("busroutedefau;t")
