@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://drn42ncoqv2om"
-valid=false
+path="res://.godot/imported/Alien Freaksters.blend-f5ec520b972939c1441deea7d8e988c5.scn"
 
 [deps]
 
 source_file="res://customassests/Alien Freaksters.blend"
+dest_files=["res://.godot/imported/Alien Freaksters.blend-f5ec520b972939c1441deea7d8e988c5.scn"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://wnnms5k6xc3p"
 path.s3tc="res://.godot/imported/material_6_baseColor.png-3d3de2cce56fff3e1157f68f9d8f72f0.s3tc.ctex"
+path.etc2="res://.godot/imported/material_6_baseColor.png-3d3de2cce56fff3e1157f68f9d8f72f0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/cartoon_building_collection/textures/material_6_baseColor.png"
-dest_files=["res://.godot/imported/material_6_baseColor.png-3d3de2cce56fff3e1157f68f9d8f72f0.s3tc.ctex"]
+dest_files=["res://.godot/imported/material_6_baseColor.png-3d3de2cce56fff3e1157f68f9d8f72f0.s3tc.ctex", "res://.godot/imported/material_6_baseColor.png-3d3de2cce56fff3e1157f68f9d8f72f0.etc2.ctex"]
 
 [params]
 

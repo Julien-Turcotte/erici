@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cloa1fhgnw2dc"
 path.s3tc="res://.godot/imported/stone_2_nesura_600x600x180_baseColor.jpeg-e4589d0b6e585266e90853b33abe6bf8.s3tc.ctex"
+path.etc2="res://.godot/imported/stone_2_nesura_600x600x180_baseColor.jpeg-e4589d0b6e585266e90853b33abe6bf8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://customassests/airport_building/textures/stone_2_nesura_600x600x180_baseColor.jpeg"
-dest_files=["res://.godot/imported/stone_2_nesura_600x600x180_baseColor.jpeg-e4589d0b6e585266e90853b33abe6bf8.s3tc.ctex"]
+dest_files=["res://.godot/imported/stone_2_nesura_600x600x180_baseColor.jpeg-e4589d0b6e585266e90853b33abe6bf8.s3tc.ctex", "res://.godot/imported/stone_2_nesura_600x600x180_baseColor.jpeg-e4589d0b6e585266e90853b33abe6bf8.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq2gufjpn5c1h"
 path.s3tc="res://.godot/imported/Rock060_2K-JPG_AmbientOcclusion.jpg-712428fc47bb292aaa9ea6992f26638b.s3tc.ctex"
+path.etc2="res://.godot/imported/Rock060_2K-JPG_AmbientOcclusion.jpg-712428fc47bb292aaa9ea6992f26638b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://textures/rock/Rock060_2K-JPG/Rock060_2K-JPG_AmbientOcclusion.jpg"
-dest_files=["res://.godot/imported/Rock060_2K-JPG_AmbientOcclusion.jpg-712428fc47bb292aaa9ea6992f26638b.s3tc.ctex"]
+dest_files=["res://.godot/imported/Rock060_2K-JPG_AmbientOcclusion.jpg-712428fc47bb292aaa9ea6992f26638b.s3tc.ctex", "res://.godot/imported/Rock060_2K-JPG_AmbientOcclusion.jpg-712428fc47bb292aaa9ea6992f26638b.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3mef2umwggsc"
 path.s3tc="res://.godot/imported/MI_Skybox_v3_Inst_emissive.png-0e101e3785a86558029e2bd8253d3265.s3tc.ctex"
+path.etc2="res://.godot/imported/MI_Skybox_v3_Inst_emissive.png-0e101e3785a86558029e2bd8253d3265.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/skybox_skydays_3/textures/MI_Skybox_v3_Inst_emissive.png"
-dest_files=["res://.godot/imported/MI_Skybox_v3_Inst_emissive.png-0e101e3785a86558029e2bd8253d3265.s3tc.ctex"]
+dest_files=["res://.godot/imported/MI_Skybox_v3_Inst_emissive.png-0e101e3785a86558029e2bd8253d3265.s3tc.ctex", "res://.godot/imported/MI_Skybox_v3_Inst_emissive.png-0e101e3785a86558029e2bd8253d3265.etc2.ctex"]
 
 [params]
 

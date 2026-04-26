@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtp6lwbxu1d2r"
 path.s3tc="res://.godot/imported/main_emissive.png-04f87487eafd53c0d22a7bdcec693f86.s3tc.ctex"
+path.etc2="res://.godot/imported/main_emissive.png-04f87487eafd53c0d22a7bdcec693f86.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://customassests/cartoon_tv/textures/main_emissive.png"
-dest_files=["res://.godot/imported/main_emissive.png-04f87487eafd53c0d22a7bdcec693f86.s3tc.ctex"]
+dest_files=["res://.godot/imported/main_emissive.png-04f87487eafd53c0d22a7bdcec693f86.s3tc.ctex", "res://.godot/imported/main_emissive.png-04f87487eafd53c0d22a7bdcec693f86.etc2.ctex"]
 
 [params]
 

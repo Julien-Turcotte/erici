@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c30dn7l0gfidk"
 path.s3tc="res://.godot/imported/Scene_-_Root_metallicRoughness.png-f3e8a9befbe929533397873873705154.s3tc.ctex"
+path.etc2="res://.godot/imported/Scene_-_Root_metallicRoughness.png-f3e8a9befbe929533397873873705154.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://customassests/green_alien/textures/Scene_-_Root_metallicRoughness.png"
-dest_files=["res://.godot/imported/Scene_-_Root_metallicRoughness.png-f3e8a9befbe929533397873873705154.s3tc.ctex"]
+dest_files=["res://.godot/imported/Scene_-_Root_metallicRoughness.png-f3e8a9befbe929533397873873705154.s3tc.ctex", "res://.godot/imported/Scene_-_Root_metallicRoughness.png-f3e8a9befbe929533397873873705154.etc2.ctex"]
 
 [params]
 

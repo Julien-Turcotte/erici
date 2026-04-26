@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhinseyavtp3y"
 path.s3tc="res://.godot/imported/Scene_-_Root_baseColor.png-cc9f413db4b74117358ac4fcee87cfb8.s3tc.ctex"
+path.etc2="res://.godot/imported/Scene_-_Root_baseColor.png-cc9f413db4b74117358ac4fcee87cfb8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://customassests/green_alien/textures/Scene_-_Root_baseColor.png"
-dest_files=["res://.godot/imported/Scene_-_Root_baseColor.png-cc9f413db4b74117358ac4fcee87cfb8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Scene_-_Root_baseColor.png-cc9f413db4b74117358ac4fcee87cfb8.s3tc.ctex", "res://.godot/imported/Scene_-_Root_baseColor.png-cc9f413db4b74117358ac4fcee87cfb8.etc2.ctex"]
 
 [params]
 

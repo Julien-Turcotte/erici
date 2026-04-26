@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3fc5qg5gvjt5"
 path.s3tc="res://.godot/imported/wood-leg_baseColor.png-1cbbb46d021ad1ac59f9d4ada6ecea2d.s3tc.ctex"
+path.etc2="res://.godot/imported/wood-leg_baseColor.png-1cbbb46d021ad1ac59f9d4ada6ecea2d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://customassests/stylized_wooden_table/textures/wood-leg_baseColor.png"
-dest_files=["res://.godot/imported/wood-leg_baseColor.png-1cbbb46d021ad1ac59f9d4ada6ecea2d.s3tc.ctex"]
+dest_files=["res://.godot/imported/wood-leg_baseColor.png-1cbbb46d021ad1ac59f9d4ada6ecea2d.s3tc.ctex", "res://.godot/imported/wood-leg_baseColor.png-1cbbb46d021ad1ac59f9d4ada6ecea2d.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bol8j316hf1fe"
 path.s3tc="res://.godot/imported/Rock060_2K-JPG_NormalGL.jpg-674005970cbf1bf25abcce162c8c5482.s3tc.ctex"
+path.etc2="res://.godot/imported/Rock060_2K-JPG_NormalGL.jpg-674005970cbf1bf25abcce162c8c5482.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://textures/rock/Rock060_2K-JPG/Rock060_2K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/Rock060_2K-JPG_NormalGL.jpg-674005970cbf1bf25abcce162c8c5482.s3tc.ctex"]
+dest_files=["res://.godot/imported/Rock060_2K-JPG_NormalGL.jpg-674005970cbf1bf25abcce162c8c5482.s3tc.ctex", "res://.godot/imported/Rock060_2K-JPG_NormalGL.jpg-674005970cbf1bf25abcce162c8c5482.etc2.ctex"]
 
 [params]
 

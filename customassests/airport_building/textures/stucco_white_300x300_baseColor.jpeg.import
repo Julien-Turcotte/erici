@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bes7jbpu8ps3r"
 path.s3tc="res://.godot/imported/stucco_white_300x300_baseColor.jpeg-63984989003f189033f579a9301ac214.s3tc.ctex"
+path.etc2="res://.godot/imported/stucco_white_300x300_baseColor.jpeg-63984989003f189033f579a9301ac214.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://customassests/airport_building/textures/stucco_white_300x300_baseColor.jpeg"
-dest_files=["res://.godot/imported/stucco_white_300x300_baseColor.jpeg-63984989003f189033f579a9301ac214.s3tc.ctex"]
+dest_files=["res://.godot/imported/stucco_white_300x300_baseColor.jpeg-63984989003f189033f579a9301ac214.s3tc.ctex", "res://.godot/imported/stucco_white_300x300_baseColor.jpeg-63984989003f189033f579a9301ac214.etc2.ctex"]
 
 [params]
 
