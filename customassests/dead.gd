@@ -13,3 +13,6 @@ func _process(delta: float) -> void:
 func on_restart_pressed():
 	get_tree().paused = false
 	get_tree().reload_current_scene()
+
+func on_quit_pressed():
+	print("quit")
