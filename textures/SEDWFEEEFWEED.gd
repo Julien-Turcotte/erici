@@ -21,7 +21,7 @@ func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Ve
 
 
 func _on_animation_finished(anim_name: StringName) -> void:
-	get_tree().change_scene_to_file("res://animation_play.tscn")
+	get_tree().change_scene_to_file("res://control.tscn")
 
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
