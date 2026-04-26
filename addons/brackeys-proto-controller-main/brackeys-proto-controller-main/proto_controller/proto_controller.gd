@@ -200,6 +200,10 @@ func check_input_mappings():
 func take_dammage():
 	if is_in_sun:
 		if energy > 0:
+			if $sizzle.playing :
+				pass
+			else:
+				$sizzle.play()
 			energy -= 1
 		else:
 			alive = false
