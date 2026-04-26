@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dgc3gr8ctk3o1"
-valid=false
+path="res://.godot/imported/Ground103_2K-JPG.blend-e0dd653536aeb0330e28349751ca8960.scn"
 
 [deps]
 
 source_file="res://textures/dirt/Ground103_2K-JPG/Ground103_2K-JPG.blend"
+dest_files=["res://.godot/imported/Ground103_2K-JPG.blend-e0dd653536aeb0330e28349751ca8960.scn"]
 
 [params]
 

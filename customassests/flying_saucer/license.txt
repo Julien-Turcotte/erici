@@ -1,0 +1,11 @@
+Model Information:
+* title:	Flying Saucer
+* source:	https://sketchfab.com/3d-models/flying-saucer-02e287ec1022407898b622d74419fee1
+* author:	SAB64 (https://sketchfab.com/shayebouffard5)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Flying Saucer" (https://sketchfab.com/3d-models/flying-saucer-02e287ec1022407898b622d74419fee1) by SAB64 (https://sketchfab.com/shayebouffard5) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
