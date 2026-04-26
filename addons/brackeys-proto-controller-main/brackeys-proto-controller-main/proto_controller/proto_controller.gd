@@ -138,6 +138,7 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 	else:
 		get_tree().paused = true
+		$dead.visible = true
 
 
 ## Rotate us to look around.
@@ -238,3 +239,13 @@ func get_sun():
 			return
 	current_sun = null
 	
+
+
+func _on_retry_pressed() -> void:
+	get_tree().paused = false
+	get_tree().reload_current_scene()
+
+
+func on_quit_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://control.tscn")

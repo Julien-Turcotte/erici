@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://wvx02gfdpmcg"
-path="res://.godot/imported/Rock060_2K-JPG.blend-eb21eba1087f63dd1c16ac09dc0dc209.scn"
+valid=false
 
 [deps]
 
 source_file="res://textures/rock/Rock060_2K-JPG/Rock060_2K-JPG.blend"
-dest_files=["res://.godot/imported/Rock060_2K-JPG.blend-eb21eba1087f63dd1c16ac09dc0dc209.scn"]
 
 [params]
 

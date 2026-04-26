@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bi5ja51gugp03"
-path="res://.godot/imported/For SF.blend-14e48b9b96cf6cf3ad5c7b44d9c29e4c.scn"
+valid=false
 
 [deps]
 
 source_file="res://customassests/table-and-bench/source/For SF.blend"
-dest_files=["res://.godot/imported/For SF.blend-14e48b9b96cf6cf3ad5c7b44d9c29e4c.scn"]
 
 [params]
 
