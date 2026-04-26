@@ -13,3 +13,12 @@ func _process(delta: float) -> void:
 
 func _on_scene_5_animation_finished(anim_name: StringName) -> void:
 	play("colorreact")
+
+
+func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
+	if event is InputEventMouseButton and event.pressed:
+		play("colorreact")
+
+
+func _on_animation_finished(anim_name: StringName) -> void:
+	get_tree().change_scene_to_file("res://animation_play.tscn")
