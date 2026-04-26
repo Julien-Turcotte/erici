@@ -4,11 +4,12 @@ extends RichTextLabel
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if Global.first_play:
+		Global.first_play = false
+		visible = true
 		await get_tree().create_timer(10.0).timeout
 		visible = false
-		Global.first_play = false
 	else:
-		pass
+		visible = false
 
 
 
