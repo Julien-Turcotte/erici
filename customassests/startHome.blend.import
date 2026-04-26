@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://6xso02q542qc"
-valid=false
+path="res://.godot/imported/startHome.blend-90800d7002843bd35b9aec5997c93abd.scn"
 
 [deps]
 
 source_file="res://customassests/startHome.blend"
+dest_files=["res://.godot/imported/startHome.blend-90800d7002843bd35b9aec5997c93abd.scn"]
 
 [params]
 
