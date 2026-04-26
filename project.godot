@@ -14,6 +14,10 @@ config/name="Ujam"
 run/main_scene="uid://bafrglya3l1wd"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[autoload]
+
+Global="*uid://uq5tjtlyyucb"
+
 [display]
 
 window/size/viewport_width=1920
