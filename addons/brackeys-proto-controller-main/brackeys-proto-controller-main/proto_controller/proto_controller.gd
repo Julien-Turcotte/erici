@@ -5,6 +5,7 @@
 
 extends CharacterBody3D
 
+@export var nbr_metal ; int = 0
 ## Can we move around?
 @export var can_move : bool = true
 ## Are we affected by gravity?
@@ -104,6 +105,8 @@ func _physics_process(delta: float) -> void:
 			take_dammage()
 			damage_timer = damage_cooldown
 
+	if nbr_metal == 3:
+		get_tree().change_scene_to_file("res://textures/airport.tscn")
 		
 		# If freeflying, handle freefly and nothing else
 		if can_freefly and freeflying:
