@@ -61,16 +61,24 @@ var alive : bool = true
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
+@onready var death_menu: CanvasItem = get_node_or_null("dead") as CanvasItem
 
 func _ready() -> void:
-	Input.MOUSE_MODE_CAPTURED
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	mouse_captured = true
 	var ititial_position = self.global_position
+	if death_menu:
+		death_menu.visible = false
+		death_menu.process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	check_input_mappings()
 	look_rotation.y = rotation.y
 	look_rotation.x = head.rotation.x
 	get_sun()
 
 func _unhandled_input(event: InputEvent) -> void:
+	if not alive:
+		return
+
 	# Mouse capturing
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		capture_mouse()
@@ -138,9 +146,15 @@ func _physics_process(delta: float) -> void:
 		# Use velocity to actually move
 		move_and_slide()
 	else:
+		handle_death_state()
+
+
+func handle_death_state() -> void:
+	if not get_tree().paused:
 		get_tree().paused = true
-		$dead.visible = true
-		Input.MOUSE_MODE_VISIBLE
+	if death_menu:
+		death_menu.visible = true
+	release_mouse()
 
 
 ## Rotate us to look around.
@@ -241,10 +255,14 @@ func get_sun():
 
 
 func _on_retry_pressed() -> void:
+	if death_menu:
+		death_menu.visible = false
 	get_tree().paused = false
 	get_tree().reload_current_scene()
 
 
 func on_quit_pressed() -> void:
+	if death_menu:
+		death_menu.visible = false
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://control.tscn")
