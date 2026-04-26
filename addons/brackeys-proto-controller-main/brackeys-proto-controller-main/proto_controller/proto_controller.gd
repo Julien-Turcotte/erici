@@ -47,7 +47,6 @@ extends CharacterBody3D
 @export var input_freefly : String = "freefly"
 
 
-
 var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
@@ -65,9 +64,9 @@ var alive : bool = true
 @onready var death_menu: CanvasItem = get_node_or_null("dead") as CanvasItem
 
 func _ready() -> void:
+	energy = GameState.saved_energy  # Restore energy from singleton
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	mouse_captured = true
-	var ititial_position = self.global_position
 	if death_menu:
 		death_menu.visible = false
 		death_menu.process_mode = Node.PROCESS_MODE_WHEN_PAUSED
@@ -99,56 +98,59 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	if alive:
-		check_sun() # en premier ofc
+		check_sun()
 		damage_timer -= delta
 		if damage_timer <= 0.0:
 			take_dammage()
 			damage_timer = damage_cooldown
 
 	if nbr_metal == 3:
+		GameState.saved_energy = energy  # Save energy before switching scene
 		get_tree().change_scene_to_file("res://textures/airport.tscn")
-		
-		# If freeflying, handle freefly and nothing else
-		if can_freefly and freeflying:
-			var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
-			var motion := (head.global_basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-			motion *= freefly_speed * delta
-			move_and_collide(motion)
-			return
-		
-		# Apply gravity to velocity
-		if has_gravity:
-			if not is_on_floor():
-				velocity += get_gravity() * delta
+		return  # Stop processing, scene is changing
 
-		# Apply jumping
-		if can_jump:
-			if Input.is_action_just_pressed(input_jump) and is_on_floor():
-				velocity.y = jump_velocity
+	# If freeflying, handle freefly and nothing else
+	if can_freefly and freeflying:
+		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
+		var motion := (head.global_basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		motion *= freefly_speed * delta
+		move_and_collide(motion)
+		return
 
-		# Modify speed based on sprinting
-		if can_sprint and Input.is_action_pressed(input_sprint):
-				move_speed = sprint_speed
-		else:
-			move_speed = base_speed
+	# Apply gravity to velocity
+	if has_gravity:
+		if not is_on_floor():
+			velocity += get_gravity() * delta
 
-		# Apply desired movement to velocity
-		if can_move:
-			var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
-			var move_dir := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-			if move_dir:
-				velocity.x = move_dir.x * move_speed
-				velocity.z = move_dir.z * move_speed
-			else:
-				velocity.x = move_toward(velocity.x, 0, move_speed)
-				velocity.z = move_toward(velocity.z, 0, move_speed)
-		else:
-			velocity.x = 0
-			velocity.y = 0
-		
-		# Use velocity to actually move
-		move_and_slide()
+	# Apply jumping
+	if can_jump:
+		if Input.is_action_just_pressed(input_jump) and is_on_floor():
+			velocity.y = jump_velocity
+
+	# Modify speed based on sprinting
+	if can_sprint and Input.is_action_pressed(input_sprint):
+		move_speed = sprint_speed
 	else:
+		move_speed = base_speed
+
+	# Apply desired movement to velocity
+	if can_move:
+		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
+		var move_dir := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		if move_dir:
+			velocity.x = move_dir.x * move_speed
+			velocity.z = move_dir.z * move_speed
+		else:
+			velocity.x = move_toward(velocity.x, 0, move_speed)
+			velocity.z = move_toward(velocity.z, 0, move_speed)
+	else:
+		velocity.x = 0
+		velocity.y = 0
+
+	# Use velocity to actually move
+	move_and_slide()
+
+	if not alive:
 		handle_death_state()
 
 
@@ -161,13 +163,10 @@ func handle_death_state() -> void:
 
 
 ## Rotate us to look around.
-## Base of controller rotates around y (left/right). Head rotates around x (up/down).
-## Modifies look_rotation based on rot_input, then resets basis and rotates by look_rotation.
 func rotate_look(rot_input : Vector2):
 	look_rotation.x -= rot_input.y * look_speed
 	look_rotation.x = clamp(look_rotation.x, deg_to_rad(-85), deg_to_rad(85))
 	look_rotation.y -= rot_input.x * look_speed
-	# Set rotation directly so existing node scale is preserved.
 	rotation = Vector3(0.0, look_rotation.y, 0.0)
 	head.rotation = Vector3(look_rotation.x, 0.0, 0.0)
 
@@ -192,8 +191,6 @@ func release_mouse():
 	mouse_captured = false
 
 
-## Checks if some Input Actions haven't been created.
-## Disables functionality accordingly.
 func check_input_mappings():
 	if can_move and not InputMap.has_action(input_left):
 		push_error("Movement disabled. No InputAction found for input_left: " + input_left)
@@ -217,36 +214,35 @@ func check_input_mappings():
 		push_error("Freefly disabled. No InputAction found for input_freefly: " + input_freefly)
 		can_freefly = false
 
+
 func take_dammage():
 	if is_in_sun:
 		if energy > 0:
-			#
 			energy -= 1
 		else:
 			alive = false
 	$CanvasLayer/red.alpha = 0.6 * (1.0 - energy / 100.0)
-		
-	
-func check_sun() -> void :
+
+
+func check_sun() -> void:
 	if current_sun == null:
 		is_in_sun = false
 		return
 
-
-	var sun_direction: Vector3 = -current_sun.global_transform.basis.z  # light travel direction
-	var to_sun: Vector3 = -sun_direction  # direction from player toward the sun source
+	var sun_direction: Vector3 = -current_sun.global_transform.basis.z
+	var to_sun: Vector3 = -sun_direction
 
 	var space_state = get_world_3d().direct_space_state
-	var ray_origin = global_position + Vector3.UP * 0.5  # offset up slightly to avoid self-hit
+	var ray_origin = global_position + Vector3.UP * 0.5
 	var ray_end = ray_origin + to_sun * 1000.0
 
 	var query = PhysicsRayQueryParameters3D.create(ray_origin, ray_end)
-	query.exclude = [self]  # don't hit ourselves
+	query.exclude = [self]
 
 	var result = space_state.intersect_ray(query)
-	is_in_sun = result.is_empty()  
-	
-	
+	is_in_sun = result.is_empty()
+
+
 func get_sun():
 	var nodes = get_parent().get_children()
 	for node in nodes:
@@ -254,13 +250,13 @@ func get_sun():
 			current_sun = node
 			return
 	current_sun = null
-	
 
 
 func _on_retry_pressed() -> void:
 	if death_menu:
 		death_menu.visible = false
 	get_tree().paused = false
+	GameState.saved_energy = 100  # Reset energy on retry
 	get_tree().reload_current_scene()
 
 
@@ -268,8 +264,9 @@ func on_quit_pressed() -> void:
 	if death_menu:
 		death_menu.visible = false
 	get_tree().paused = false
+	GameState.saved_energy = 100  # Reset energy on quit to menu
 	get_tree().change_scene_to_file("res://control.tscn")
 
 
 func _on_area_3d_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
-	pass # Replace with function body.
+	pass
