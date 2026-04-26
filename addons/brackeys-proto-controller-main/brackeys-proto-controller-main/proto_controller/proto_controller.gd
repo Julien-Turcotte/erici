@@ -5,7 +5,7 @@
 
 extends CharacterBody3D
 
-@export var nbr_metal ; int = 0
+@export var nbr_metal : int = 0
 ## Can we move around?
 @export var can_move : bool = true
 ## Are we affected by gravity?
