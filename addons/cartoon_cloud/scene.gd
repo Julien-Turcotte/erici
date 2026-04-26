@@ -1,7 +1,7 @@
 extends Node3D
 
 @export var speed: float = 2.0
-@export var distance: float = 10.0  # how far it travels each side
+@export var distance: float = 10.0
 
 var direction: float = 1.0
 var start_x: float
