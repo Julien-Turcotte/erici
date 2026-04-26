@@ -15,3 +15,8 @@ func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Ve
 	print(event)
 	if event is InputEventMouseMotion:
 		play("busroutedefau;t")
+
+
+func _on_area_3d_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
+	if body.is_in_group("player"):
+		play("busroutedefau;t")

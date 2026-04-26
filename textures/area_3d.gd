@@ -20,3 +20,11 @@ func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, n
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	pass # Replace with function body.
+
+
+func _on_body_entered(body: Node3D) -> void:
+	pass
+
+
+func _on_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
+	pass
