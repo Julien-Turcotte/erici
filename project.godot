@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Ujam"
-run/main_scene="uid://djri2cswey3x6"
+run/main_scene="uid://bafrglya3l1wd"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [display]
