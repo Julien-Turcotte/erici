@@ -21,8 +21,8 @@ func _on_area_3d_input_event(camera: Node, event: InputEvent, event_position: Ve
 
 
 func _on_animation_finished(anim_name: StringName) -> void:
-	print("changing to cheminee")
-	get_tree().change_scene_to_file("res://cheminee.tscn")
+	print("changing to home")
+	get_tree().change_scene_to_file("res://Scene/inside_home.tscn")
 
 
 func _on_animator_flal_animation_finished(anim_name: StringName) -> void:
