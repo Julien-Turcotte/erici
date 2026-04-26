@@ -105,6 +105,7 @@ func _physics_process(delta: float) -> void:
 			damage_timer = damage_cooldown
 
 	if nbr_metal == 3:
+		energy = 100
 		GameState.saved_energy = energy  # Save energy before switching scene
 		get_tree().change_scene_to_file("res://textures/airport.tscn")
 		return  # Stop processing, scene is changing
