@@ -20,11 +20,11 @@ extends CharacterBody3D
 ## Look around rotation speed.
 @export var look_speed : float = 0.003
 ## Normal speed.
-@export var base_speed : float = 7.0
+@export var base_speed : float = 0.7
 ## Speed of jump.
 @export var jump_velocity : float = 5.5
 ## How fast do we run?
-@export var sprint_speed : float = 10.0
+@export var sprint_speed : float = 1
 ## How fast do we freefly?
 @export var freefly_speed : float = 25.0
 
@@ -126,10 +126,9 @@ func rotate_look(rot_input : Vector2):
 	look_rotation.x -= rot_input.y * look_speed
 	look_rotation.x = clamp(look_rotation.x, deg_to_rad(-85), deg_to_rad(85))
 	look_rotation.y -= rot_input.x * look_speed
-	transform.basis = Basis()
-	rotate_y(look_rotation.y)
-	head.transform.basis = Basis()
-	head.rotate_x(look_rotation.x)
+	# Set rotation directly so existing node scale is preserved.
+	rotation = Vector3(0.0, look_rotation.y, 0.0)
+	head.rotation = Vector3(look_rotation.x, 0.0, 0.0)
 
 
 func enable_freefly():
