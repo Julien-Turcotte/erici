@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c0cdsl4phfd33"
-path="res://.godot/imported/startHome.glb-52f87dbef1cdc5062a3fb8c5274e9030.scn"
+valid=false
 
 [deps]
 
 source_file="res://customassests/startHome.glb"
-dest_files=["res://.godot/imported/startHome.glb-52f87dbef1cdc5062a3fb8c5274e9030.scn"]
 
 [params]
 
