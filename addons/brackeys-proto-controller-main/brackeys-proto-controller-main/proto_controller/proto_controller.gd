@@ -269,3 +269,7 @@ func on_quit_pressed() -> void:
 		death_menu.visible = false
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://control.tscn")
+
+
+func _on_area_3d_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
+	pass # Replace with function body.
